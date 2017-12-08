@@ -8,7 +8,7 @@ module.exports = function (context) {
     var Q = context.requireCordovaModule('q');
     var deferral = new Q.defer();
 
-    var libraryRepository = 'https://github.com/MSOpenTech/winstore-jscompat.git';
+    var libraryRepository = 'https://github.com/Microsoft/winstore-jscompat.git';
     var libraryTargetDirectory = path.join('plugins', 'cordova-plugin-winstore-jscompat', 'src');
 
     if (fs.existsSync(libraryTargetDirectory)) {
